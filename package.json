@@ -1,0 +1,37 @@
+{
+  "name": "cha",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.19.0",
+    "http-proxy-middleware": "^0.20.0",
+    "json-server": "^0.15.1",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-request-hook": "^2.1.1",
+    "react-scripts": "^2.1.8"
+  },
+  "scripts": {
+    "start": "npx concurrently \"npm run start:server\" \"npm run start:client\"",
+    "start:client": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "start:server": "npx json-server --watch server/db.json --port 4000 --routes server/routes.json"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
