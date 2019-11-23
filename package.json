@@ -3,13 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@rehooks/window-size": "^1.0.2",
     "axios": "^0.19.0",
     "http-proxy-middleware": "^0.20.0",
     "json-server": "^0.15.1",
+    "navi": "^0.13.6",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
+    "react-hookedup": "^0.1.2",
+    "react-navi": "^0.13.6",
     "react-request-hook": "^2.1.1",
-    "react-scripts": "^2.1.8"
+    "react-scripts": "^2.1.8",
+    "use-debounce": "^3.1.0",
+    "use-undo": "^1.0.3"
   },
   "scripts": {
     "start": "npx concurrently \"npm run start:server\" \"npm run start:client\"",
@@ -33,5 +39,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@testing-library/react-hooks": "^3.2.1",
+    "react-test-renderer": "^16.12.0"
   }
 }

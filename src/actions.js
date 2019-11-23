@@ -8,11 +8,12 @@ export const logout = () => ({ type: 'LOGOUT' })
 
 export const fetchPosts = posts => ({ type: 'FETCH_POSTS', posts })
 
-export const createPost = (
+export const createPost = ({
   title,
   content,
-  user
-) => ({ type: 'CREATE_POST', title, content, author: user })
+  user,
+  id
+}) => ({ type: 'CREATE_POST', title, content, author: user, id })
 
 
 export const postsError = () => ({ type: 'POSTS_ERROR' })
